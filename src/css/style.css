@@ -1,0 +1,329 @@
+/* ===Fonts=== */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Raleway:wght@300;400;500;700&display=swap');
+
+/* font-family: 'Merriweather', serif;
+font-family: 'Raleway', sans-serif; */
+
+/* ===Fonts Ende=== */
+*,
+html,
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    background-color: #1d1d1d;
+    box-sizing: border-box;
+}
+
+/* ===Überschriften und Paragraphen=== */
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 5rem;
+    color: #f5f5f5;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    color: #af7837;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-weight: 400;
+
+    font-family: 'Raleway', sans-serif;
+    color: #f5f5f5;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    color: #f5f5f5;
+}
+
+#flexBoxHeader h3 {
+    text-transform: uppercase;
+}
+
+/* ===Überschriften Ende=== */
+
+.grid-container {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 1fr;
+    grid-template-rows: repeat(6);
+}
+
+/* ===Header=== */
+
+.grid-row1 {
+    display: grid;
+    align-content: center;
+    border: 2px solid red;
+    background-image: url(../image/fritz-bielmeier-ooJi3CJQRa8-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-Header {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid #000;
+}
+
+#flexBoxHeader {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+
+/* ===Header Ende=== */
+
+/* ===About me=== */
+
+.grid-row2 {
+    border: 5px solid red;
+}
+
+/* ===About me Ende=== */
+
+/* ===Articles=== */
+.grid-row3 {
+}
+.article {
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 20rem 30rem 30rem;
+    gap: 0rem 10rem;
+    justify-content: center;
+    justify-items: center;
+}
+
+.article h2 {
+    margin: 2rem auto 1rem;
+}
+
+.col0 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    align-self: center;
+}
+.col0 h1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.line1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin-left: 510px;
+    width: 84px;
+    border-bottom: 3px solid #af772c;
+}
+
+.col1 {
+    width: 350px;
+    grid-row: 2/4;
+}
+.col2 {
+    width: 350px;
+    grid-row: 2/4;
+    align-self: end;
+    margin-bottom: 2rem;
+}
+.col3 {
+    width: 350px;
+    grid-row: 2/4;
+}
+
+.line2 {
+    border-top: 1px solid #af772c;
+    margin-bottom: 2rem;
+}
+
+.bild {
+    width: 350px;
+    height: 250px;
+    box-shadow: -2.2rem -2.2rem 0rem #313131;
+}
+
+/* ===Button=== */
+
+/* todo link / hover werden nicht richtig angezeigt */
+.btn-blog {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.btn-blog > a {
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-blog > a:hover {
+    color: #c09359;
+}
+.btn-blog > a:visited {
+    text-decoration: underline;
+}
+/* ===Articles Ende===*/
+
+/* ===Gallery=== */
+
+.grid-row4 {
+    display: grid;
+    margin: 20px 0 20px 0;
+    justify-content: center;
+    justify-items: center;
+}
+
+.gallery {
+    margin-right: auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.bild-ga {
+    margin: 5px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ===Gallary Header=== */
+.ga-header {
+    margin: 20px auto 0 312px;
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.ga-line {
+    border-bottom: 3px solid #af7837;
+    width: 80px;
+}
+
+/* ===Gallary Header=== */
+
+/* ===Gallery1=== */
+.gallery1 {
+    width: 15vw;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-end;
+}
+
+.bild1 {
+    background-image: url(https://images.unsplash.com/photo-1427435150519-42d9bcd0aa81?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80);
+    width: 370px;
+    height: 350px;
+    align-self: flex-end;
+}
+
+.bild4 {
+    background-image: url(https://images.unsplash.com/photo-1427435150519-42d9bcd0aa81?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80);
+    align-self: flex-start;
+    width: 440px;
+    height: 560px;
+}
+/* ===Gallery1 Ende=== */
+
+/* ===Gallery2=== */
+.gallery2 {
+    width: 28vw;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+}
+
+.bild2 {
+    background-image: url(https://images.unsplash.com/photo-1427435150519-42d9bcd0aa81?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80);
+    width: 370px;
+    height: 350px;
+}
+.bild3 {
+    background-image: url(https://images.unsplash.com/photo-1427435150519-42d9bcd0aa81?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80);
+    width: 370px;
+    height: 200px;
+    align-self: flex-end;
+}
+
+.bild5 {
+    background-image: url(https://images.unsplash.com/photo-1427435150519-42d9bcd0aa81?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80);
+    width: 855px;
+    height: 350px;
+}
+.bild6 {
+    background-image: url(https://images.unsplash.com/photo-1427435150519-42d9bcd0aa81?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80);
+    width: 370px;
+    height: 350px;
+}
+.bild7 {
+    background-image: url(https://images.unsplash.com/photo-1427435150519-42d9bcd0aa81?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80);
+    width: 370px;
+    height: 200px;
+}
+/* ===Gallery2 Ende=== */
+/* ===Gallery=== */
+
+.grid-row5 {
+    border: 5px solid red;
+}
+
+/* === Footer === */
+.grid-row6 {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    column-gap: 1px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+    height: 100px;
+}
+
+.item-6 {
+    width: 80px;
+    height: 80px;
+    align-self: center;
+    justify-self: center;
+}
+
+.fab {
+    width: 80px;
+    height: 80px;
+    color: #ae7638;
+    border: 1px solid #ae7638;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* === Footer Ende === */
