@@ -6,48 +6,38 @@
 font-family: 'Raleway', sans-serif; */
 
 /* ===Fonts Ende=== */
-*,
+* {
+    box-sizing: border-box;
+}
 html,
 body {
-    width: 100%;
-    height: auto;
     margin: 0;
     padding: 0;
     font-size: 10px;
     background-color: #1d1d1d;
-    box-sizing: border-box;
 }
 
 /* ===Überschriften und Paragraphen=== */
 
-h1 {
+.head {
     font-family: 'Merriweather', serif;
-    font-weight: 400;
     font-size: 5rem;
-    color: #f5f5f5;
+    font-weight: 400;
+    color: #af772c;
+    margin: 0;
 }
 
 h2 {
     font-family: 'Merriweather', serif;
     color: #af7837;
-    font-size: 2.5rem;
-}
-
-h3 {
-    font-weight: 400;
-
-    font-family: 'Raleway', sans-serif;
-    color: #f5f5f5;
+    font-size: 2rem;
 }
 
 p {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #f5f5f5;
-}
-
-#flexBoxHeader h3 {
-    text-transform: uppercase;
+    line-height: 25px;
 }
 
 /* ===Überschriften Ende=== */
@@ -56,39 +46,61 @@ p {
     box-sizing: border-box;
     width: 100%;
     display: grid;
-    grid-template-areas: 1fr;
+    grid-template-areas: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(6);
+    align-content: center;
 }
 
 /* ===Header=== */
 
 .grid-row1 {
     display: grid;
+    grid-template-rows: 1200px;
     align-content: center;
-    border: 2px solid red;
     background-image: url(../image/fritz-bielmeier-ooJi3CJQRa8-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.flex-Header {
-    box-sizing: border-box;
+.l-header {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border: 2px solid #000;
-}
-
-#flexBoxHeader {
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
     justify-content: center;
     align-items: center;
-    border: 2px solid #ccc;
     text-align: center;
+}
+
+#l-BoxHeader {
+    margin-bottom: 100px;
+}
+#l-BoxHeader h3 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: #f5f5f5;
+    margin: 0;
+    text-transform: uppercase;
+}
+#l-BoxHeader h1 {
+    font-size: 12rem;
+    font-weight: 400;
+    font-family: 'Merriweather', sans-serif;
+    color: #f5f5f5;
+    margin: 75px;
+    text-transform: uppercase;
+}
+
+#l-BoxHeader p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    color: #f5f5f5;
+    line-height: 25px;
+}
+
+.l-line {
+    border-bottom: 3px solid #f5f5f5;
+    width: 105px;
+    margin-left: 273px;
 }
 
 /* ===Header Ende=== */
@@ -96,7 +108,52 @@ p {
 /* ===About me=== */
 
 .grid-row2 {
-    border: 5px solid red;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    margin-top: -52px;
+}
+
+.about {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.ab-content {
+    display: flex;
+    flex-basis: 100%;
+    height: 560px;
+    background-color: #373737;
+}
+
+.ab-cont {
+    font-size: 1.4rem;
+    margin: 50px 50px;
+    flex-basis: 35%;
+}
+
+.ab-cont > h1 {
+    margin-bottom: 0;
+}
+
+.ab-line {
+    border-bottom: 3px solid #af772c;
+    width: 85px;
+}
+
+.ab-img {
+    margin: 0 100px 0 -700px;
+}
+
+.ab-bild {
+    background-image: url(https://images.unsplash.com/photo-1602011762055-48a092aa6ad3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
+    width: 580px;
+    height: 660px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* ===About me Ende=== */
@@ -109,8 +166,8 @@ p {
     margin-top: 5rem;
     margin-bottom: 5rem;
     display: grid;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 20rem 30rem 30rem;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 30rem 40rem 30rem;
     gap: 0rem 10rem;
     justify-content: center;
     justify-items: center;
@@ -129,12 +186,13 @@ p {
     justify-self: center;
     align-self: center;
     text-align: center;
+    margin-bottom: 0;
 }
 .line1 {
     justify-self: center;
     align-self: center;
     text-align: center;
-    margin-left: 510px;
+    margin-left: 2px;
     width: 84px;
     border-bottom: 3px solid #af772c;
 }
@@ -166,6 +224,32 @@ p {
 }
 
 /* ===Button=== */
+
+.btn {
+    margin-top: 50px;
+    width: 180px;
+    height: 58px;
+    color: #ae7638;
+    border: 1px solid #ae7638;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+}
+
+#btn1:hover {
+    background-color: #1d1d1d;
+}
+
+#btn2:hover {
+    color: #1d1d1d;
+    background-color: #ae7638;
+}
+
+#btn3:hover {
+    background-color: #1d1d1d;
+}
 
 /* todo link / hover werden nicht richtig angezeigt */
 .btn-blog {
@@ -216,12 +300,17 @@ p {
 }
 
 /* ===Gallary Header=== */
+
 .ga-header {
-    margin: 20px auto 0 312px;
+    margin: 25px 0 50px 312px;
     flex-basis: 100%;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
+}
+
+.ga-header h1 {
+    margin-bottom: 0;
 }
 
 .ga-line {
@@ -290,11 +379,70 @@ p {
     height: 200px;
 }
 /* ===Gallery2 Ende=== */
-/* ===Gallery=== */
+/* ===Gallery Ende=== */
 
+/* ===Contact=== */
 .grid-row5 {
-    border: 5px solid red;
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    margin: 150px auto;
 }
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c-content {
+    display: flex;
+    flex-basis: 100%;
+    height: 560px;
+    background-color: #373737;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+}
+.c-cont {
+    font-size: 1.4rem;
+    margin: 50px 50px;
+    flex-basis: 35%;
+}
+.c-cont > form,
+h1 {
+    margin-bottom: 0;
+}
+.c-line {
+    border-bottom: 3px solid #af772c;
+    width: 80px;
+}
+.c-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+
+.c-form > input {
+    flex-basis: 48%;
+    margin-bottom: 20px;
+}
+.c-form > textarea {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+.c-img {
+    margin: 0 700px 0 100px;
+}
+.c-bild {
+    background-image: url(../image/joanna-kosinska-B6yDtYs2IgY-unsplash.jpg);
+    width: 580px;
+    height: 660px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* ===Contact Ende=== */
 
 /* === Footer === */
 .grid-row6 {
