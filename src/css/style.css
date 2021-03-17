@@ -431,6 +431,13 @@ h1 {
     margin-bottom: 20px;
 }
 
+.c-form > input,
+textarea {
+    background-color: #373737;
+    border-bottom: 2px solid #af772c;
+    color: #ccc;
+}
+
 .c-img {
     margin: 0 700px 0 100px;
 }
